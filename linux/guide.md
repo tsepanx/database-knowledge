@@ -2,21 +2,25 @@
 
 ## Table of contents
 
-- [Choosing appropriate Linux](#choosing-appropriate-linux)
-- [Feel the power of pacman](#feel-the-power-of-pacman)
-- [AUR](#aur)
-- [Yay](#yay)
+- [**Linux** - the right one.](#linux---the-right-one)
+- [**Pacman** - most powerful package manager](#pacman)
+    - [**AUR** - Arch User Repository](#aur)
+- [**yay** - Yet Another Yogurt](#yay)
     * [Installation](#installation)
-- [Zsh](#zsh)
+- [**zsh** - great alternative to bash](#zsh)
     - [Plugins](#plugins)
         - [zsh-autosuggestions](#zsh-autosuggestions)
         - [zsh-fast-syntax-highlightning](#zsh-fast-syntax-highlightning)
     - [Oh My Zsh](#oh-my-zsh)
+- [~~vim~~]()
+- [~~qtile~~]()
+- [~~dunst~~]()
+- [~~polybar~~]()
 
 In this article, I'll try describe my most common used tools for everyday needs, 
 that make my communication experience with **Linux** (Especially **Arch**) much better.
 
-## Choosing appropriate Linux
+## Linux - the right one
 
 - #### Debian
     You might take a look at *vanilla Debian*, but I didn't spend much time using it,
@@ -25,9 +29,12 @@ that make my communication experience with **Linux** (Especially **Arch**) much 
     Anyway, you might like it, as it is most **stable** among popular distributions.
 
     ##### Other Debian-based, but not exactly Debian
-    Since I'm not a big fan of **\*Ubuntu**-based distributions, because of their dependence on **Cannonical**, 
-    but if you're new to GNU/Linux, you might find **Linux Mint** as great start point
-- #### Red Hat
+    Since I'm not a big fan of **\*Ubuntu**-based distributions,
+    because of their dependence on **Cannonical**, and to be clear,
+    for me, it's nothing more than just Debian with a bunch of *useless* apps, I'd rather configure it **myself**.
+
+    But if you're new to GNU/Linux, you might find **Linux Mint** as a great start point
+- #### Red Hat, Fedora
     Again, it's depends on big company, which is already red flag, I didn't even tryed it.
 
     All I know, is they invented their own package manager, package format, but what for?
@@ -63,7 +70,7 @@ that make my communication experience with **Linux** (Especially **Arch**) much 
 
 Well, next part will be suitable only for **Arch-based** distributions, you can skip it.
 
-## Feel the power of pacman
+## pacman
 
 **Archlinux** ships with **pacman**, a very powerful built-in package manager,
 and in combination with **AUR** let you install almost **any** software you want, just sitting inside the **command line**
@@ -90,14 +97,14 @@ Here is some simple **cheat sheet** how to use pacman:
 > sudo pacman -R package_name
 > ~~~
 
-## AUR
-The Arch User Repository (AUR) is a **community-driven** repository for Arch users.
+- ### AUR
+    The Arch User Repository (AUR) is a **community-driven** repository for Arch users.
 
-In the AUR, users are able to **contribute** their own package builds. 
-The AUR community has the ability to vote for packages in the AUR. 
-If a package becomes popular enough — it may be entered into the community repository, and accessible directly by **pacman**.
+    In the AUR, users are able to **contribute** their own package builds. 
+    The AUR community has the ability to vote for packages in the AUR. 
+    If a package becomes popular enough — it may be entered into the community repository, and accessible directly by **pacman**.
 
-## Yay
+## yay
 *Yet Another Yogurt* - An **AUR** Helper Written in Go
 
 Well, exactly it inteds to be **pacman replacement**, and does it well.
@@ -116,8 +123,8 @@ Since **yay** isn't provided by official **Arch** repository, you need to instal
 ~~~
 curl -s git.io/yay.sh | bash
 ~~~
-## Zsh
-Zsh is a shell designed for interactive use, it is also a powerful scripting language.
+## zsh
+Is a shell designed for interactive use, it is also a powerful scripting language.
 
 It's similar to **bash**, but offers more configurability, powerful command-line **completion**,
 and can be extended with a big amount of different **pllugins**.
