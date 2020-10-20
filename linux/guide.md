@@ -1,5 +1,18 @@
 # GNU/Linux guide
 
+## Table of contents
+
+- [Choosing appropriate Linux](#choosing-appropriate-linux)
+- [Feel the power of pacman](#feel-the-power-of-pacman)
+- [AUR](#aur)
+- [Yay](#yay)
+    * [Installation](#installation)
+- [Zsh](#zsh)
+    - [Plugins](#plugins)
+        - [zsh-autosuggestions](#zsh-autosuggestions)
+        - [zsh-fast-syntax-highlightning](#zsh-fast-syntax-highlightning)
+    - [Oh My Zsh](#oh-my-zsh)
+
 In this article, I'll try describe my most common used tools for everyday needs, 
 that make my communication experience with **Linux** (Especially **Arch**) much better.
 
@@ -58,51 +71,87 @@ and in combination with **AUR** let you install almost **any** software you want
 Here is some simple **cheat sheet** how to use pacman:
 
 > **Update** system
-> ```
+> ~~~
 > sudo pacman -Syu
-> ```
+> ~~~
 
 > **Install** packages
-> ```
+> ~~~
 > sudo pacman -S package_name
-> ```
+> ~~~
 
 > Or with **packages.txt** file written line-by-line:
-> ```
+> ~~~
 > sudo pacman -S $(cat packages.txt)
-> ```
+> ~~~
 
 > **Delete** packages
-> ```
+> ~~~
 > sudo pacman -R package_name
-> ```
+> ~~~
 
-### AUR
+## AUR
 The Arch User Repository (AUR) is a **community-driven** repository for Arch users.
 
 In the AUR, users are able to **contribute** their own package builds. 
 The AUR community has the ability to vote for packages in the AUR. 
 If a package becomes popular enough — it may be entered into the community repository, and accessible directly by **pacman**.
 
-### Yay
+## Yay
 *Yet Another Yogurt* - An **AUR** Helper Written in Go
 
 Well, exactly it inteds to be **pacman replacement**, and does it well.
-In other words, the **same** syntax can be used as with the *pacman*: ```yay -S```, ```yay -R```,
+In other words, the **same** syntax can be used as with the *pacman*: `yay -S`, `yay -R`,
 and all other keys used with pacman.
 
 So, as said above, yay adds support to **AUR**, and you can easily install any AUR package, as it exists in main Archlinux repository:
-```
+~~~
 yay -S package_name
-```
+~~~
 
-Also you can drop that unnecessary ```sudo```, as with pacman.
+Also you can drop that unnecessary `sudo`, as with pacman.
 
-##### Installation
-```
-wget git.io/yay.sh
-sh yay.sh
-```
+#### Installation
+Since **yay** isn't provided by official **Arch** repository, you need to install it **manually**:
+~~~
+curl -s git.io/yay.sh | bash
+~~~
+## Zsh
+Zsh is a shell designed for interactive use, it is also a powerful scripting language.
 
-### ZSH
-To be continued...
+It's similar to **bash**, but offers more configurability, powerful command-line **completion**,
+and can be extended with a big amount of different **pllugins**.
+
+It can perform some nice stuff like that:
+
+![](../resources/zsh_example.png)
+
+But that's not even it's main advantage, his **power** comes with a lot of plugins,
+that provide really great experience.
+
+
+#### Installation
+The easiest way to get **zsh** is just install it via your distro package manager, like
+
+`sudo apt install zsh`, `sudo pacman -S zsh`, or whatever you use.
+
+And then, change your **default** shell using `chsh -s $(which zsh)`
+
+### Plugins
+There are two nice plugins, that i very recommend to use: 
+
+- #### zsh-autosuggestions
+    [Installation](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+
+    ![](../resources/autosuggestions.gif)
+
+- #### zsh-fast-syntax-highlightning
+    [Installation](https://github.com/zdharma/fast-syntax-highlighting)
+
+    ![](../resources/syntax.png)
+    ![](../resources/syntax.gif)
+
+#### oh-my-zsh
+Worth mentioning about **Oh my zsh** - most popular zsh plugins **manager**.
+It simplifies plugins management.
+[Installation](https://github.com/ohmyzsh/ohmyzsh/wiki)
