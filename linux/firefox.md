@@ -94,3 +94,4 @@ user_pref("geo.enabled", false);
 
 ## Related Links
 [Firefox Configuration Guide for Privacy Freaks and Performance Buffs](https://12bytes.org/articles/tech/firefox/firefoxgecko-configuration-guide-for-privacy-and-performance-buffs/)
+[Choose your browser carefully](https://unixsheikh.com/articles/choose-your-browser-carefully.html#tweaking-firefox)

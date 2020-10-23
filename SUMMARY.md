@@ -2,8 +2,9 @@
 
 - [Table of contents](README.md)
 - [Linux]()
-    * [Arch Installation](linux/installation.md)
     * [GNU/Linux guide](linux/guide.md)
+    * [Firefox guide](linux/firefox.md)
+    * [Arch Installation](linux/installation.md)
     * [Packages list](linux/packages.md)
 - [Qemu]()
     * [Shared folder in virt-manager](qemu/shared.md)
