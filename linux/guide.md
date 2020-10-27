@@ -149,14 +149,18 @@ There are two nice plugins, that i very recommend to use:
 
 - #### zsh-autosuggestions
     [Installation](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+    
+    ```
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+    ```
+    **.zshrc** `plugins=(git zsh-syntax-highlighting)`
 
-    ![](../resources/autosuggestions.gif)
-
+    ![png](../resources/autosuggestions.gif)
 - #### zsh-fast-syntax-highlightning
     [Installation](https://github.com/zdharma/fast-syntax-highlighting)
 
-    ![](../resources/syntax.png)
-    ![](../resources/syntax.gif)
+    ![png](../resources/syntax.png)
+    ![png](../resources/syntax.gif)
 
 #### oh-my-zsh
 Worth mentioning about **Oh my zsh** - most popular zsh plugins **manager**.

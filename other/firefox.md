@@ -106,6 +106,7 @@ Automatically do it with [my `ffrm.sh`](https://git.nand.tk/st/dots/src/branch/m
 
 ## Related Links
 - [Firefox/Privacy (Archwiki)](https://wiki.archlinux.org/index.php/Firefox/Privacy)
+- [Browser extensions (Archwiki)](https://wiki.archlinux.org/index.php/Browser_extensions)
 - [Choose your browser carefully](https://unixsheikh.com/articles/choose-your-browser-carefully.html#tweaking-firefox)
 - [Firefox Configuration Guide for Privacy Freaks and Performance Buffs](https://12bytes.org/articles/tech/firefox/firefoxgecko-configuration-guide-for-privacy-and-performance-buffs/)
 - [Essential privacy (and other) addons](https://digdeeper.neocities.org/ghost/addons.html)
