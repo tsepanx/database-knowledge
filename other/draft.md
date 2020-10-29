@@ -144,25 +144,24 @@ The easiest way to get **zsh** is just install it via your distro package manage
 
 And then, change your **default** shell using `chsh -s $(which zsh)`
 
-### Plugins
-There are two nice plugins, that i very recommend to use: 
-
-- #### zsh-autosuggestions
-    [Installation](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
-    
-    ```
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-    ```
-    **.zshrc** `plugins=(git zsh-syntax-highlighting)`
-
-    ![png](../resources/autosuggestions.gif)
-- #### zsh-fast-syntax-highlightning
-    [Installation](https://github.com/zdharma/fast-syntax-highlighting)
-
-    ![png](../resources/syntax.png)
-    ![png](../resources/syntax.gif)
-
-#### oh-my-zsh
-Worth mentioning about **Oh my zsh** - most popular zsh plugins **manager**.
+### oh-my-zsh
+Most popular zsh plugins **manager**.
 It simplifies plugins management.
 [Installation](https://github.com/ohmyzsh/ohmyzsh/wiki)
+
+### Plugins
+- zsh-autosuggestions [Installation](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+
+    `git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+
+    **.zshrc** `plugins=(zsh-autosuggestions)`
+
+- zsh-fast-syntax-highlightning [Installation](https://github.com/zdharma/fast-syntax-highlighting)
+
+    `git clone https://github.com/zdharma/fast-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting`
+    
+    **.zshrc** `plugins=(zsh-fast-syntax-highlighting)`
+
+[png](../resources/syntax.png)
+[png](../resources/syntax.gif)
+
