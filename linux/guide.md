@@ -2,6 +2,7 @@
 
 ## Table of contents
 - [**Qemu** cheatsheet](#qemu-cheatsheet)
+- [**dotfiles**](#dotfiles)
 - [**zsh**](#zsh)
     - [oh-my-zsh](#oh-my-zsh)
     - [Plugins](#plugins)
@@ -29,7 +30,18 @@ Run `spice`:
 spicy -p 3001
 ```
 
-## zsh
+### dotfiles
+Bare clone
+```
+$ git clone --bare https://codeberg.org/st/dots.git ~/.dotfiles
+```
+Create **config** alias
+```
+$ alias config='git --git-dir=$HOME.dotfiles/ --work-tree=$HOME'
+$ config checkout
+```
+
+### zsh
 - [Awesome-zsh](https://github.com/unixorn/awesome-zsh-plugins)
 - [zsh: tips & tricks (Habr)](https://habr.com/ru/post/164597/)
 - [Zsh (Archwiki)](https://wiki.archlinux.org/index.php/Zsh)
@@ -40,18 +52,13 @@ spicy -p 3001
 Change shell using `chsh -s $(which zsh)`
 
 #### oh-my-zsh 
-- [Github](https://github.com/ohmyzsh/ohmyzsh)
 - [Installation](https://github.com/ohmyzsh/ohmyzsh/wiki)
 
 #### Plugins
 - zsh-autosuggestions [Installation](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
-
-    `git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
-
-    **.zshrc** `plugins=(zsh-autosuggestions)`
-
 - fast-syntax-highlightning [Installation](https://github.com/zdharma/fast-syntax-highlighting)
 
-    `git clone https://github.com/zdharma/fast-syntax-highlighting $ZSH_CUSTOM/plugins/fast-syntax-highlighting`
-    
-    **.zshrc** `plugins=(fast-syntax-highlighting)`
+**.zshrc** `plugins=(fast-syntax-highlighting)`
+```
+git clone https://github.com/zsh-users/zsh-... $ZSH_CUSTOM/plugins/zsh-...
+```
