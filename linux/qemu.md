@@ -1,8 +1,24 @@
 # Qemu
 
-#### `qemu-img`
+#### qemu-img
+Create
 ```
 qemu-img create -f qcow2 debian.qcow2 8G
+```
+
+Backing image
+```
+qemu-img create -f qcow2 -b base.qcow2 backing.qcow2
+```
+
+Change backing file
+```
+qemu-img rebase -f qcow2 -u -b 'new_backing' base
+```
+
+Apply backing -> base
+```
+qemu-img commit backing.qcow2
 ```
 
 #### Run `qemu`:

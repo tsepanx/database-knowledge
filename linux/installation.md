@@ -30,16 +30,11 @@ $ mount /dev/sdZ /mnt/home
 There are packages, that I suggest everyone to install:
 
 ```
-$ pacstrap /mnt \
-
-base base-devel \
-linux linux-firmware linux-headers \
-xorg xorg-drivers xorg-xinit \
-grub efibootmgr \
-zsh sddm termite \
-wget vim iwd \
-git python \
-networkmanager
+$ pacstrap /mnt base base-devel linux grub xorg
+linux-firmware linux-headers efibootmgr
+sddm wget curl vim htop ncdu
+git python networkmanager termite
+spice-vdagent firefox
 ```
 
 ##### Fstab 
@@ -101,6 +96,13 @@ Edit **etc/sudoers**:
 
 ```
 $ grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+##### services
+```
+systemctl enable NetworkManager
+systemctl enable sddm
+systemctl enable iwd
 ```
 
 **Reboot**

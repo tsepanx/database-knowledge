@@ -2,7 +2,7 @@
 
 - [Table of contents](README.md)
 - [Linux]()
-    * [Arch Installation](linux/arch/installation.md)
+    * [Arch Installation](linux/installation.md)
     * [GNU/Linux Configuration](linux/guide.md)
     * [Qemu](linux/qemu.md)
 - [Other]()

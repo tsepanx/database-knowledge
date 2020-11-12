@@ -1,7 +1,14 @@
 # GNU/Linux Configuration
 
 ## Table of contents
+- [packages](#packages)
 - [**dotfiles**](#dotfiles)
+
+### packages
+```
+sudo apt install -y git vim curl htop ncdu neofetch ssh simplescreenrecorder
+sudo pacman -S git vim curl htop ncdu neofetch spice-vdagent termite bash-completion
+```
 
 ### dotfiles
 Bare clone
