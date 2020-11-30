@@ -1,8 +1,13 @@
 # GNU/Linux software
-- [~~vim~~]()
-- [~~qtile~~]()
-- [~~dunst~~]()
-- [~~polybar~~]()
+| Programm    | Usage               |
+| -           | -                   |
+| **qtile**   | Window manager      |
+| **zsh**     | Shell               |
+| **termite** | Terminal emulator   |
+| **neovim**  | Text editor         |
+| **dunst**   | Notification daemon |
+| **polybar** | Panel               |
+| **sxiv**    | Image viewer        |
 
 
 ### yay
