@@ -6,7 +6,7 @@
 
 ### packages
 ```
-sudo apt install -y git vim curl htop ncdu neofetch ssh simplescreenrecorder
+sudo apt install -y git neovim curl htop ncdu neofetch ssh python3 spice-vdagent bash-completion
 sudo pacman -S git vim curl htop ncdu neofetch spice-vdagent termite bash-completion
 ```
 
