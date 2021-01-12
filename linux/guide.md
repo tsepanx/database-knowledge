@@ -4,10 +4,31 @@
 - [packages](#packages)
 - [**dotfiles**](#dotfiles)
 
-### packages
+#### packages
+
 ```
-sudo apt install -y git neovim curl htop ncdu neofetch ssh python3 spice-vdagent bash-completion
-sudo pacman -S git vim curl htop ncdu neofetch spice-vdagent termite bash-completion
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
+sudo apt install -y tree zip git python3 neovim curl htop ncdu neofetch bash-completion
+```
+
+### Servers
+```
+sudo apt install -y neovim curl htop ncdu neofetch nginx certbot python3-certbot-nginx net-tools
+```
+
+##### Pleroma
+```
+sudo apt install -y build-essential postgresql postgresql-contrib cmake libmagic-dev ffmpeg imagemagick libimage-exiftool-perl
+```
+
+##### Wireguard
+```
+sudo apt install -y wireguard-dkms wireguard-tools linux-headers-$(uname -r)
+```
+
+##### Virtual Machines
+```
+sudo apt install -y ssh spice-vdagent 
 ```
 
 ### dotfiles

@@ -30,7 +30,7 @@
 - [uMatrix](https://addons.mozilla.org/en-US/firefox/addon/umatrix/) - Is also a powerful content blocker that provides more granular control than uBlock
 - [Cookie AutoDelete](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/) - Works only if you set `privacy.clearOnShutdown.cookies` to `false`
 - [ClearURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/) - Strips many tracking parameters, such as the `utm_*`
-***
+---
 
 - [HTTPS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/) - Redirect to https page if possible
 - [HTTPZ](https://addons.mozilla.org/en-US/firefox/addon/httpz/) - Similar, but more smart
@@ -41,13 +41,14 @@
 - [Privacy Possum](https://addons.mozilla.org/en-US/firefox/addon/privacy-possum/) - Provides additonal headers, eTags blocking
 - [I don't care about cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/) - Get rid of cookie warngings from websites
 - [Temporary Containers](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/) - Open tabs in different containers
-***
+---
 
 - [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) - Custom CSS styles rules for certain websites
 - [Vimium C](https://addons.mozilla.org/en-US/firefox/addon/vimium-c/) - Adds *vim* shortcuts to browser
 - [Buster](https://addons.mozilla.org/en-US/firefox/addon/buster-captcha-solver/) - Captcha solver for humans
 - [KeePassXC-Browser](https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/) - Official plugin for the KeePassXC
 - [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/) - Dark mode for every website
+- [Redirector](https://addons.mozilla.org/en-US/firefox/addon/redirector/) - Redirect links
 
 ## Related Links
 - [Firefox/Privacy (Archwiki)](https://wiki.archlinux.org/index.php/Firefox/Privacy)
