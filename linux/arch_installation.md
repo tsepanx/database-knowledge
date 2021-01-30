@@ -1,5 +1,5 @@
 ### Archlinux Installation
-It's not that hard, even for those, who've never worked with console, just be patient
+It's not that hard, even for those, who've never worked with command line, just be patient
 
 ##### Adjust time
 ```
