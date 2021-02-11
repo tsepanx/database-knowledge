@@ -1,8 +1,17 @@
 # GNU/Linux Configuration
 
 ## Table of contents
-- [packages](#packages)
-- [dotfiles](#dotfiles)
+- [Linux packages](#linux-packages)
+  - [Apt](#apt)
+  - [Pacman](#pacman)
+- [Wireguard installation](#wireguard-installation)
+- [My config files](#my-config-files)
+- [Global configs](#global-configs)
+  - [Environment](#environment)
+  - [Intel](#intel)
+- [Theming](#theming)
+  - [Icons](#icons)
+  - [Theme](#theme)
 
 ### Linux packages
 #### Apt
@@ -34,7 +43,7 @@ chmod +x wireguard-install.sh
 ./wireguard-install.sh
 ```
 
-### My dots config files
+### My config files
 
 Do bare clone
 ```
@@ -71,11 +80,50 @@ Section "Device"
 EndSection
 ```
 
-#### Redshift
-`/etc/geoclue/geoclue.conf`
+### Theming
+
+#### Icons
+
+![Icons png](resources/qogir-icons.png)
+
+#### Theme
+
+[Github](https://github.com/vinceliuice/Qogir-theme)
+
+![Theme png](resources/dui-theme.png)
+
+Also, set theme of **qt5** to **gtk2** in **qt5ct**, to make it the same as gtk.
+
+
+### New user
+
+Create user home dir
 ```
-[redshift]
-allowed=true
-system=false
-users=
+mkdir -p /home/USER
 ```
+
+Add user
+```
+useradd -d /home/USER USER -s /bin/bash
+usermod -aG sudo USER
+```
+
+Set permissions
+```
+chmod 700 /home/USER/.ssh
+chmod 644 /home/USER/.ssh/authorized_keys
+
+chown -R USER:USER /home/USER/
+```
+
+Set password
+```
+passwd USER
+```
+
+To copy ssh private key,
+On host machine do:
+```
+ssh-copy-id USER@111.99.33.111
+```
+
