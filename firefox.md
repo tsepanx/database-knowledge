@@ -1,4 +1,4 @@
-## Title
+## Firefox configuration
 
 [ankerfox user.js](https://raw.githubusercontent.com/arkenfox/user.js/master/user.js)
 
