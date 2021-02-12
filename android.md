@@ -1,5 +1,14 @@
 # Android Privacy Guide
 
+## LineageOs First-boot setup
+- Display
+    * Dark theme -> pure black
+    * Screen timeout = 2 minutes
+- System
+    * Front camera effectes
+        - Visual effect = off
+        - Front camera effects = Disable
+
 ## Applications
 
 - [F-droid](https://f-droid.org/) - Main OSS Applications store
@@ -26,6 +35,7 @@
 - [KeePassDX](https://f-droid.org/en/packages/com.kunzisoft.keepass.libre/) - Awesome KeePass compatible password manager
 - [AntennaPod](https://f-droid.org/en/packages/de.danoeh.antennapod/) - Podcast manager and player
 - [Blokada 5](https://f-droid.org/en/packages/org.blokada.fem.fdroid/)
+- [App Manager](https://f-droid.org/en/packages/io.github.muntashirakon.AppManager/) - Android package manager
 - [AdAway](https://f-droid.org/en/packages/org.adaway/) - Ad-blocker with hosts file
 - [AFWall+](https://f-droid.org/en/packages/dev.ukanth.ufirewall/) - Firewall (iptables frontend)
 - [Gadgetbridge](https://f-droid.org/en/packages/nodomain.freeyourgadget.gadgetbridge/)
