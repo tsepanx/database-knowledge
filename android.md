@@ -2,12 +2,29 @@
 
 ## LineageOs First-boot setup
 - Display
-    * Dark theme -> pure black
+    * Dark theme = Pure black
     * Screen timeout = 2 minutes
 - System
     * Front camera effectes
         - Visual effect = off
         - Front camera effects = Disable
+    * Status bar
+        - System icons
+            * Volume = off
+            * Headset = on
+        - Battery percentage = Next to the icon
+        - Brightness slider = Show always
+        - Auto brightness = off
+    * Languages & input
+        - Languages = English (US), Russian
+        - Virtual keyboard = Simple keyboard
+    * Developer options
+        - Advanced restart = on
+        - Default USB Configuration = File Transfer
+- Sound
+    * Screen locking sounds = off
+    * Touch sounds = off
+    * Dial pad tones = off
 
 ## Applications
 
@@ -22,7 +39,7 @@
 
 ### Internet & Social
 - [Privacy Browser](https://f-droid.org/en/packages/com.stoutner.privacybrowser.standard/)
-- [Telegram](https://f-droid.org/en/packages/org.telegram.messenger/)
+- [Telegram FOSS](https://f-droid.org/en/packages/org.telegram.messenger/)
 - [Tusky](https://f-droid.org/en/packages/com.keylesspalace.tusky/)
 - [Conversations](https://f-droid.org/en/packages/eu.siacs.conversations/)
 - [Delta Chat](https://f-droid.org/en/packages/com.b44t.messenger/)
@@ -30,6 +47,7 @@
 - [WireGuard](https://f-droid.org/en/packages/com.wireguard.android/)
 - [OpenVPN for Android](https://f-droid.org/en/packages/de.blinkt.openvpn/)
 - [Riseup VPN](https://f-droid.org/en/packages/se.leap.riseupvpn/)
+- [Calyx VPN](https://f-droid.org/en/packages/org.calyxinstitute.vpn/)
 
 ### Main
 - [KeePassDX](https://f-droid.org/en/packages/com.kunzisoft.keepass.libre/) - Awesome KeePass compatible password manager
@@ -47,6 +65,9 @@
 - [Yet Another Call Blocker](https://f-droid.org/en/packages/dummydomain.yetanothercallblocker/) - Block unwanted calls effortlessly
 - [TrackerControl](https://f-droid.org/en/packages/net.kollnig.missioncontrol.fdroid/)
 - [SimpleLogin | Anti-spam](https://f-droid.org/en/packages/io.simplelogin.android.fdroid/)
+- [NewPipe](https://f-droid.org/en/packages/org.schabi.newpipe/)
+- [VLC](https://f-droid.org/en/packages/org.videolan.vlc/) - The best video player
+- [Unlauncher](https://f-droid.org/en/packages/com.jkuester.unlauncher/) - Simple, minimalistic launcher
 
 - [oandbackup](https://f-droid.org/en/packages/dk.jens.backup/) - Backup manager
 - [OAndBackupX](https://f-droid.org/en/packages/com.machiav3lli.backup/) - onadbackup fork
@@ -63,16 +84,15 @@
 - [Simple Keyboard](https://f-droid.org/en/packages/rkr.simplekeyboard.inputmethod/)
 
 ### Music
-- [Pulse Music](https://f-droid.org/en/packages/com.hardcodecoder.pulsemusic/)
-- [MPDroid](https://f-droid.org/en/packages/com.namelessdev.mpdroid/) - MPD client
-- [Odyssey Music Player](https://f-droid.org/en/packages/org.gateshipone.odyssey/)
-- [Gelli](https://f-droid.org/en/packages/com.dkanada.gramophone/)
-- [Metro](https://f-droid.org/en/packages/io.github.muntashirakon.Music/) - A music player for Android
 - [Vinyl Music Player](https://f-droid.org/en/packages/com.poupa.vinylmusicplayer/)
-- [Odeon](https://f-droid.org/en/packages/fr.nihilus.music/)
+- [Metro](https://f-droid.org/en/packages/io.github.muntashirakon.Music/) - A music player for Android
+- [Pulse Music](https://f-droid.org/en/packages/com.hardcodecoder.pulsemusic/)
 - [Vanilla Music](https://f-droid.org/en/packages/ch.blinkenlights.android.vanilla/)
+- [Odyssey Music Player](https://f-droid.org/en/packages/org.gateshipone.odyssey/)
+- [MPDroid](https://f-droid.org/en/packages/com.namelessdev.mpdroid/) - MPD client
+- [Gelli](https://f-droid.org/en/packages/com.dkanada.gramophone/)
+- [Odeon](https://f-droid.org/en/packages/fr.nihilus.music/)
 - [Phonograph](https://f-droid.org/en/packages/com.kabouzeid.gramophone/)
-- [NewPipe](https://f-droid.org/en/packages/org.schabi.newpipe/)
 
 ### Nextcloud
 - [Nextcloud](https://f-droid.org/en/packages/com.nextcloud.client/) - Synchronization client
@@ -89,5 +109,3 @@
 - [SuperTuxKart](https://f-droid.org/en/packages/org.supertuxkart.stk)
 - [Shattered Pixel Dungeon](https://f-droid.org/en/packages/com.shatteredpixel.shatteredpixeldungeon/)
 - [Freebloks](https://f-droid.org/en/packages/de.saschahlusiak.freebloks/)
-
-### Other
