@@ -35,7 +35,20 @@ pacman -S $(echo packages.txt)
 ```
 
 ---
-### Wireguard installation
+### Server setup
+
+**Termite** terminfo
+```
+# On host
+infocmp > termite.terminfo
+scp termite.terminfo root@server:
+
+# On server
+tic -x termite.terminfo && rm termite.terminfo
+```
+
+
+#### Wireguard installation
 
 ```
 curl -O https://raw.githubusercontent.com/angristan/wireguard-install/master/wireguard-install.sh
