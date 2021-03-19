@@ -6,6 +6,7 @@
   - [Pacman](#pacman)
 - [Server setup](#server-setup)
   - [Wireguard installation](#wireguard-installation)
+  - [ICMP traffic](#icmp-traffic)
 - [My config files](#my-config-files)
 - [Global configs](#global-configs)
   - [Environment](#environment)
