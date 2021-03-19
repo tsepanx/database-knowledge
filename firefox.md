@@ -49,6 +49,7 @@
 - [KeePassXC-Browser](https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/) - Official plugin for the KeePassXC
 - [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/) - Dark mode for every website
 - [Redirector](https://addons.mozilla.org/en-US/firefox/addon/redirector/) - Redirect links
+- [Change Timezone](https://addons.mozilla.org/en-US/firefox/addon/change-timezone-time-shift/) - Change your timezone to a desired value
 
 ## Related Links
 - [Firefox/Privacy (Archwiki)](https://wiki.archlinux.org/index.php/Firefox/Privacy)

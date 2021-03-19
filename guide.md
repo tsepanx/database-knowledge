@@ -38,6 +38,11 @@ pacman -S $(echo packages.txt)
 ---
 ### Server setup
 
+Linux kernel for **Debian**
+```
+sudo apt install linux-image-4.19.0-14 linux-headers-4.19.0-14-cloud-amd64
+```
+
 **Termite** terminfo
 ```
 # On host
@@ -55,6 +60,13 @@ tic -x termite.terminfo && rm termite.terminfo
 curl -O https://raw.githubusercontent.com/angristan/wireguard-install/master/wireguard-install.sh
 chmod +x wireguard-install.sh
 ./wireguard-install.sh
+```
+
+#### ICMP traffic
+
+Add the following line to `/etc/ufw/before.rules`
+```
+-A ufw-before-input -p icmp —icmp-type echo-request -j DROP
 ```
 
 ### My config files
