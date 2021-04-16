@@ -1,4 +1,9 @@
-### Archlinux Installation
+# Archlinux
+
+## Table of contents
+
+
+### Installation
 It's not that hard, even for those, who've never worked with command line, just be patient
 
 ##### Adjust time
@@ -79,7 +84,7 @@ $ mkinitcpio -P
 
 ##### Create user
 ```
-$ useradd -m -g users -G wheel -s /bin/zsh $USER
+$ useradd -m -G wheel,users -s /bin/bash $USER
 $ passwd
 $ passwd $USER
 ```
@@ -92,7 +97,7 @@ Edit **etc/sudoers**:
 ##### Grub
 
 - For `BIOS` - `$ grub-install /dev/sdX`
-- For `UEFI` - `$ grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot`
+- For `UEFI` - `$ grub-install --target=x86_64-efi --bootloader-id=Archlinux --efi-directory=/boot`
 
 ```
 $ grub-mkconfig -o /boot/grub/grub.cfg

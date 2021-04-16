@@ -1,14 +1,15 @@
-# Some title
+# My database knowledge
 
 - [Table of contents](README.md)
 - [Linux]()
-    * [Arch Installation](tmp/arch_installation.md)
     * [GNU/Linux Desktop setup](desktop-setup.md)
     * [GNU/Linux Server Setup](server-setup.md)
+- [Other]()
     * [Android](android.md)
     * [Qemu](qemu.md)
-- [Other]()
     * [Firefox setup guide](firefox.md)
-    * [Firefox prefs (user.js)](tmp/userjs.md)
-    * [Flask tutorial](tmp/flask.md)
-    * [Shared folder in virt-manager](tmp/shared.md)
+- [Archive]()
+    * [Archlinux](archive/archlinux.md)
+    * [Firefox prefs (user.js)](archive/userjs.md)
+    * [Flask tutorial](archive/flask.md)
+    * [Shared folder in virt-manager](archive/shared.md)
