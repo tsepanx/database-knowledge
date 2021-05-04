@@ -1,4 +1,6 @@
-#+title GNU/Linux distributions installation.
+#+title: GNU/Linux distributions installation.
+#+author: Tsepa Stepan
+#+date:   2021-04-05
 
 This file contains all useful links of different distros installaiton, plus my own step-by-step instruction.
 

@@ -1,6 +1,6 @@
 #+title:  My org mode guide
-#+author: tsepanx
-#+date:   2021-05-03
+#+author: Tsepa Stepan
+#+date:   2021-04-03
 
 I made it mainly for myself, to reproduce any step if I forgot it.
 
