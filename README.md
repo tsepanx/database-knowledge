@@ -11,7 +11,3 @@
     * [Android](other/android.md)
     * [Qemu](other/qemu.md)
     * [Firefox setup guide](other/firefox.md)
-~~ - [Archive]() ~~
-~~  * [Firefox prefs (user.js)](archive/userjs.md) ~~
-~~  * [Flask tutorial](archive/flask.md) ~~
-~~  * [Shared folder in virt-manager](archive/shared.md) ~~
