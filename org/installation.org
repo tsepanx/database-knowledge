@@ -3,9 +3,9 @@
 This file contains all useful links of different distros installaiton, plus my own step-by-step instruction.
 
 
-[[https://wiki.artixlinux.org/Main/Installation][Artix Linux]]
-[[https://wiki.archlinux.org/title/Installation_guide][Arch linux Installation guide]]
-[[https://docs.voidlinux.org/installation/guides/chroot.html][Void linux installation via chroot]]
+- [[https://wiki.artixlinux.org/Main/Installation][Artix Linux]]
+- [[https://wiki.archlinux.org/title/Installation_guide][Arch linux Installation guide]]
+- [[https://docs.voidlinux.org/installation/guides/chroot.html][Void linux installation via chroot]]
 
 * Installation
 
@@ -14,7 +14,7 @@ This file contains all useful links of different distros installaiton, plus my o
 | ~/etc/locale.conf~ | ~LANG=en_US.UTF-8~     |
 | ~/etc/locale.gen~  | ~en_US.UTF-8 UTF-8~    |
 | ~/etc/hostname~    | your hostname          |
-| ~etc/sudoers~      | ~%wheel ALL=(ALL) ALL~ |
+| ~/etc/sudoers~      | ~%wheel ALL=(ALL) ALL~ |
 
 ** Adjust time (timedatectl)
 #+begin_src shell
@@ -73,24 +73,25 @@ mkinitcpio -P
 
 ** Create user
 #+begin_src shell
-useradd -m -G wheel,users $USER
+useradd -m -G sudo,users $USER
 
 passwd
 passwd $USER
 #+end_src
 
 ** Grub
-*** For *BIOS*
+*** Grub installation
+**** For *BIOS*
 #+begin_src shell
 grub-install /dev/sdX
 #+end_src
 
-*** For *UEFI*
+**** For *UEFI*
 #+begin_src shell
 grub-install --target=x86_64-efi --bootloader-id=VOID --efi-directory=/boot
 #+end_src
 
+*** Grub config
 #+begin_src shell
 grub-mkconfig -o /boot/grub/grub.cfg
 #+end_src
-
