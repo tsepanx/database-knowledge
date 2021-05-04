@@ -1,0 +1,95 @@
+#+title:  My org mode guide
+#+author: tsepanx
+#+date:   2021-05-03
+
+I made it mainly for myself, to reproduce any step if I forgot it.
+
+Official docs are available at https://orgmode.org/guide.
+
+* Introduction
+I found org mode very useful, especially for taking notes, or whatsoever.
+Seems to be complete replacement of markdown for me.
+
+* Document structure
+** Cycling between headings (Motion)
+| C-c C-n | Next heading                     |
+| C-c C-p | Previous heading                 |
+| C-c C-f | Next heading same level          |
+| C-c C-b | Previous heading same level      |
+| C-c C-u | Backward to higher level heading |
+
+** Moving headers (Structure Editing)
+| M-RET               | Insert new heading with same level as current                              |
+| M-S-RET             | Insert new TODO entry with same level as current heading.                  |
+| M-LEFT/RIGHT or H/L | Promote or demote current heading by one level.                            |
+| M-UP/DOWN or J/K    | Move subtree up or down, swap with previous or next subtree of same level. |
+
+** Search in headers (Sparse Trees)
+| C-c /   | Prompts for an extra key to select a sparse-tree creating command |
+| C-c / r | Search by regexp (Normal usage)                                   |
+
+** Plain lists
+- One
+- [ ] Two
+- [ ] Three
+  - Another level
+    - 33333
+
+| M-RET   | Insert new item at current level                                                                        |
+| M-S-RET | Insert a new item with a checkbox                                                                       |
+| C-c C-c | If there is a checkbox, toggle. Also verify bullets and indentation consistency in the whole list.      |
+| C-c -   | Cycle the entire list level through the different itemize/enumerate bullets (‘-’, ‘+’, ‘*’, ‘1.’, ‘1)’) |
+
+* Tables
+C-c | Convert the active region to table.
+** Column and row editing
+
+| M-LEFT/RIGHT | Move the current column left/right.                                                                             |
+| M-S-LEFT     | Kill the current column.                                                                                        |
+| M-S-RIGHT    | Insert a new column to the left of point position.                                                              |
+| M-UP/DOWN    | Move the current row up/down.                                                                                   |
+| M-S-UP       | Kill the current row or horizontal line.                                                                        |
+| M-S-DOWN     | Insert a new row above the current row. With a prefix argument, the line is created below the current one.      |
+| C-c -        | Insert a horizontal line below current row. With a prefix argument, the line is created above the current line. |
+| C-c RET      | Insert a horizontal line below current row, and move the point into the row below that line.                    |
+| C-c ^        | Sort the table lines in the region. The position of point indicates the column to be used for sorting           |
+* Hyperlinks
+
+~[[LINK][DESCRIPTION]]~
+
+[[https://archlinux.org][Archlinux website]]
+
+| C-c C-l                    | Insert a link. This prompts for a link to be inserted into the buffer                                     |
+| C-c C-l (on existing link) | When point is on an existing link, C-c C-l allows you to edit the link and description parts of the link. |
+
+* TODO Items
+** Basic TODO Functionality
+| C-c C-t      | Change the TODO state of the current item                              |
+| C-c / t      | View TODO items in a sparse tree (see [[file:~/org/orgmode.org::*Search in headers (Sparse Trees)][Search in headers (Sparse Trees)]] |
+| S-RIGHT/LEFT | Select the following/preceding TODO state, similar to cycling.         |
+| S-M-RET      | Insert a new TODO entry below the current one                          |
+
+* Timestamps
+| C-c . | Add a new timestamp |
+
+* Other Test Footers
+** My table
+
+| AAA      | Hiii |
+| --       | ---  |
+| NNNNNNNN | DDDD |
+|          |      |
+
+Outlining
+Headlines and folding make structured editing a breeze. Plain text makes it easy to sync and version control Org files.
+
+** Hello There
+*** Ok, then
+**** Yoooouuuuhu!!
+***** HHHH
+- [ ] AAAa
+- [X] Done TODO
+
+
+[[https://archlinux.org][AAAAA]]
+** TODO Some thing to do

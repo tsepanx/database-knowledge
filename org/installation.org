@@ -1,0 +1,96 @@
+#+title GNU/Linux distributions installation.
+
+This file contains all useful links of different distros installaiton, plus my own step-by-step instruction.
+
+
+[[https://wiki.artixlinux.org/Main/Installation][Artix Linux]]
+[[https://wiki.archlinux.org/title/Installation_guide][Arch linux Installation guide]]
+[[https://docs.voidlinux.org/installation/guides/chroot.html][Void linux installation via chroot]]
+
+* Installation
+
+| File to edit       | What to insert         |
+|--------------------+------------------------|
+| ~/etc/locale.conf~ | ~LANG=en_US.UTF-8~     |
+| ~/etc/locale.gen~  | ~en_US.UTF-8 UTF-8~    |
+| ~/etc/hostname~    | your hostname          |
+| ~etc/sudoers~      | ~%wheel ALL=(ALL) ALL~ |
+
+** Adjust time (timedatectl)
+#+begin_src shell
+timedatectl set-ntp true
+#+end_src
+
+** Mount partitions
+#+begin_src shell
+mkfs.fat -F32   -L BOOT /dev/sda1
+mkfs.ext4       -L ROOT /dev/sda2
+mkfs.ext4       -L HOME /dev/sda3
+#+end_src
+
+*** Mount
+#+begin_src shell
+mount /dev/sda1 /mnt/boot
+mount /dev/sda2 /mnt
+mount /dev/sda3 /mnt/home
+#+end_src
+
+** Pacstrap
+#+begin_src shell
+pacstrap /mnt base base-devel linux linux-firmware
+#+end_src
+
+** Fstab
+#+begin_src shell
+genfstab -U /mnt >> /mnt/etc/fstab
+#+end_src
+
+** Chroot into /mnt
+#+begin_src shell
+arch-chroot /mnt
+artix-chroot /mnt
+chroot /mnt
+#+end_src
+** Timezone
+Set `Europe/Moscow`
+
+#+begin_src shell
+ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+hwclock --systohc
+#+end_src
+
+** Locales
+
+#+begin_src shell
+locale-gen
+#+end_src
+
+** Build kernel
+
+#+begin_src shell
+mkinitcpio -P
+#+end_src
+
+** Create user
+#+begin_src shell
+useradd -m -G wheel,users $USER
+
+passwd
+passwd $USER
+#+end_src
+
+** Grub
+*** For *BIOS*
+#+begin_src shell
+grub-install /dev/sdX
+#+end_src
+
+*** For *UEFI*
+#+begin_src shell
+grub-install --target=x86_64-efi --bootloader-id=VOID --efi-directory=/boot
+#+end_src
+
+#+begin_src shell
+grub-mkconfig -o /boot/grub/grub.cfg
+#+end_src
+
