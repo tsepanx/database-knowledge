@@ -81,6 +81,15 @@ Add the following line to `/etc/ufw/before.rules`
 -A ufw-before-input -p icmp —icmp-type echo-request -j DROP
 ```
 
+or
+
+```
+echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_all
+
+echo "net.ipv4.icmp_echo_ignore_all = 1" >> /etc/sysctl.conf
+sysctl -p
+```
+
 - [Reference](https://xakinfo.ru/os/kak-ubrat-opredelenie-tunnelja-dvustoronnij-ping-v-vpn/)
 
 #### Docker

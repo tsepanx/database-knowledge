@@ -5,6 +5,7 @@
   - [Pacman](#pacman)
   - [Xbps](#xbps)
 - [My config files](#my-config-files)
+- [Shell](#shell)
 - [System configs](#system-configs)
   - [Environment](#environment)
 
@@ -43,6 +44,14 @@ Create **config** alias
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 config checkout
 ```
+
+### Shell
+
+#### Zsh
+https://github.com/zsh-users/zsh-autosuggestions
+
+https://github.com/zsh-users/zsh-syntax-highlighting
+https://github.com/zdharma/fast-syntax-highlighting
 
 ### System configs
 
