@@ -41,6 +41,7 @@
 - [Privacy Possum](https://addons.mozilla.org/en-US/firefox/addon/privacy-possum/) - Provides additonal headers, eTags blocking
 - [I don't care about cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/) - Get rid of cookie warngings from websites
 - [Temporary Containers](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/) - Open tabs in different containers
+- [Firefox Multi-Account Containers](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/) - Simple containers extension made by Mozilla
 ---
 
 - [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) - Custom CSS styles rules for certain websites

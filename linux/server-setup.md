@@ -74,11 +74,24 @@ scp termite.terminfo root@server:
 tic -x termite.terminfo && rm termite.terminfo
 ```
 
+#### UFW
+
+```
+sudo apt install ufw
+
+ufw allow ssh
+ufw allow <your_wireguard_port>
+
+ufw enable
+```
+
+
+
 #### ICMP traffic
 
 Add the following line to `/etc/ufw/before.rules`
 ```
--A ufw-before-input -p icmp —icmp-type echo-request -j DROP
+-A ufw-before-input -p icmp --icmp-type echo-request -j DROP
 ```
 
 or
