@@ -50,7 +50,7 @@ config checkout
 #### Zsh
 https://github.com/zsh-users/zsh-autosuggestions
 
-https://github.com/zsh-users/zsh-syntax-highlighting
+https://github.com/zsh-users/zsh-syntax-highlighting \
 https://github.com/zdharma/fast-syntax-highlighting
 
 ### System configs

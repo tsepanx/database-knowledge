@@ -16,7 +16,7 @@ This file contains all useful links of different distros installaiton, plus my o
 | ~/etc/locale.conf~ | ~LANG=en_US.UTF-8~     |
 | ~/etc/locale.gen~  | ~en_US.UTF-8 UTF-8~    |
 | ~/etc/hostname~    | your hostname          |
-| ~/etc/sudoers~      | ~%wheel ALL=(ALL) ALL~ |
+| ~/etc/sudoers~     | ~%wheel ALL=(ALL) ALL~ |
 
 ** Adjust time (timedatectl)
 #+begin_src shell
